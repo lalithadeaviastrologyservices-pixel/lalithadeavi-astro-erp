@@ -691,111 +691,39 @@ footer{
         ముందస్తు సంప్రదింపుల కోసం క్రింది వివరాలను నమోదు చేయండి.
     </p>
 
-    <div class="appointment-box">
+<div class="appointment-box">
 
-        <form id="appointmentForm">
+    <form id="appointmentForm">
 
-            <div class="form-group">
+        <div class="form-group">
 
-                <label for="customer_name">
-                    👤 పూర్తి పేరు *
-                </label>
+    <label for="appointment_time">
+        ⏰ సమయం *
+    </label>
 
-                <input
-                    type="text"
-                    id="customer_name"
-                    name="customer_name"
-                    placeholder="మీ పూర్తి పేరు"
-                    required>
+    <input
+        type="time"
+        id="appointment_time"
+        name="appointment_time"
+        required>
 
-            </div>
+</div>
 
-            <div class="form-row">
+</div>
 
-                <div class="form-group">
+<div class="form-group">
 
-                    <label for="phone">
-                        📞 మొబైల్ నంబర్ *
-                    </label>
+    <label for="message">
+        📝 మీ సందేశం / అవసరం
+    </label>
 
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="10 అంకెల మొబైల్ నంబర్"
-                        pattern="[0-9]{10}"
-                        maxlength="10"
-                        required>
+    <textarea
+        id="message"
+        name="message"
+        rows="4"
+        placeholder="మీ సందేశం లేదా అవసరాన్ని ఇక్కడ నమోదు చేయండి"></textarea>
 
-                </div>
-
-                <div class="form-group">
-
-                    <label for="email">
-                        📧 Email
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="your@email.com">
-
-                </div>
-
-            </div>
-
-            <div class="form-group">
-
-                <label for="service">
-                    🔮 కావలసిన సేవ *
-                </label>
-
-                <select
-                    id="service"
-                    name="service"
-                    required>
-
-                    <option value="">
-                        సేవను ఎంచుకోండి
-                    </option>
-
-                    <option value="జ్యోతిష్య సేవలు">
-                        జ్యోతిష్య సేవలు
-                    </option>
-
-                    <option value="వైదిక సేవలు">
-                        వైదిక సేవలు
-                    </option>
-
-                    <option value="నిత్య పంచాంగం">
-                        నిత్య పంచాంగం
-                    </option>
-
-                    <option value="ఆధ్యాత్మిక మార్గదర్శనం">
-                        ఆధ్యాత్మిక మార్గదర్శనం
-                    </option>
-
-                </select>
-
-            </div>
-
-            <div class="form-row">
-
-                <div class="form-group">
-
-                    <label for="appointment_date">
-                        📅 తేదీ *
-                    </label>
-
-                    <input
-                        type="date"
-                        id="appointment_date"
-                        name="appointment_date"
-                        required>
-
-                </div>
-
+</div>
                 <div class="form-group">
 
                     <label for="appointment_time">
