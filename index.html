@@ -679,100 +679,60 @@ footer{
 
 </section>
 
-<!-- APPOINTMENT -->
-
-<section class="appointment-section" id="appointment">
-
-    <h2 class="section-title">
-        అపాయింట్‌మెంట్
-    </h2>
-
-    <p class="section-subtitle">
-        ముందస్తు సంప్రదింపుల కోసం క్రింది వివరాలను నమోదు చేయండి.
-    </p>
-
 <div class="appointment-box">
 
     <form id="appointmentForm">
 
         <div class="form-group">
 
-    <label for="appointment_time">
-        ⏰ సమయం *
-    </label>
+            <label for="appointment_time">
+                ⏰ సమయం *
+            </label>
 
-    <input
-        type="time"
-        id="appointment_time"
-        name="appointment_time"
-        required>
+            <input
+                type="time"
+                id="appointment_time"
+                name="appointment_time"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="message">
+                📝 మీ సందేశం / అవసరం
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="మీకు కావలసిన సేవ లేదా వివరాలను ఇక్కడ నమోదు చేయండి...">
+            </textarea>
+
+        </div>
+
+        <div class="submit-area">
+
+            <button
+                type="submit"
+                class="btn submit-btn"
+                id="submitButton">
+
+                📅 Appointment Book చేయండి
+
+            </button>
+
+        </div>
+
+        <div
+            id="formMessage"
+            class="form-message">
+        </div>
+
+    </form>
 
 </div>
-
-</div>
-
-<div class="form-group">
-
-    <label for="message">
-        📝 మీ సందేశం / అవసరం
-    </label>
-
-    <textarea
-        id="message"
-        name="message"
-        rows="4"
-        placeholder="మీ సందేశం లేదా అవసరాన్ని ఇక్కడ నమోదు చేయండి"></textarea>
-
-</div>
-                <div class="form-group">
-
-                    <label for="appointment_time">
-                        ⏰ సమయం *
-                    </label>
-
-                    <input
-                        type="time"
-                        id="appointment_time"
-                        name="appointment_time"
-                        required>
-
-                </div>
-
-            </div>
-
-            <div class="form-group">
-
-                <label for="message">
-                    📝 మీ సందేశం / అవసరం
-                </label>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    placeholder="మీకు కావలసిన సేవ లేదా వివరాలను ఇక్కడ నమోదు చేయండి..."></textarea>
-
-            </div>
-
-            <div class="submit-area">
-
-                <button
-                    type="submit"
-                    class="btn submit-btn"
-                    id="submitButton">
-
-                    📅 Appointment Book చేయండి
-
-                </button>
-
-            </div>
-
-            <div
-                id="formMessage"
-                class="form-message">
-            </div>
-
-        </form>
-
     </div>
 
 </section>
